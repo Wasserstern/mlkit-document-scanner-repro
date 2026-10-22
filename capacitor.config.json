@@ -1,0 +1,5 @@
+{
+  "appId": "io.example.documentscannerrepro",
+  "appName": "DocScanner Repro",
+  "webDir": "dist"
+}

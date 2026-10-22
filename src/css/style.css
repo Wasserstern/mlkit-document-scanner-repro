@@ -1,0 +1,28 @@
+body {
+  font-family: system-ui, sans-serif;
+  margin: 0;
+  padding: 16px;
+  padding-top: calc(16px + env(safe-area-inset-top));
+}
+
+main {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 14px;
+  margin: 8px 0;
+  font-size: 16px;
+}
+
+pre {
+  white-space: pre-wrap;
+  word-break: break-all;
+  background: #f3f3f3;
+  padding: 12px;
+  font-size: 12px;
+  min-height: 120px;
+}

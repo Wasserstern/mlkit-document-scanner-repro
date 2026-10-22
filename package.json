@@ -1,0 +1,22 @@
+{
+  "name": "mlkit-document-scanner-repro",
+  "version": "1.0.0",
+  "description": "Minimal reproduction: @capacitor-mlkit/document-scanner loses the scanDocument result when Android destroys the app while the scanner is open",
+  "private": true,
+  "scripts": {
+    "start": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@capacitor-mlkit/document-scanner": "8.2.1",
+    "@capacitor/android": "8.5.3",
+    "@capacitor/app": "8.1.1",
+    "@capacitor/core": "8.5.3"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "8.5.3",
+    "vite": "^5.4.0"
+  },
+  "license": "MIT"
+}

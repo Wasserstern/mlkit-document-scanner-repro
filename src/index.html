@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>DocScanner Repro</title>
+    <meta
+      name="viewport"
+      content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <link rel="icon" type="image/x-icon" href="./assets/icon/favicon.ico" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Document Scanner Repro</h1>
+      <p>
+        1. Enable Developer options → "Don't keep activities" and close this app once.<br />
+        2. Tap "Scan document", scan one page, press Save in the scanner.<br />
+        3. Expected: the log shows the scan result or an <code>appRestoredResult</code> event.<br />
+        Actual: the app restarts and the log stays empty.
+      </p>
+      <button id="scan">Scan document</button>
+      <button id="check-module">Check scanner module</button>
+      <button id="clear-log">Clear log</button>
+      <pre id="log"></pre>
+    </main>
+    <script src="./js/app.js" type="module"></script>
+  </body>
+</html>
